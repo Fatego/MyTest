@@ -1,0 +1,21 @@
+spring:
+  thymeleaf:
+    cache: false
+    mode: HTML5
+    encoding: UTF-8
+    servlet:
+      content-type: text/html
+
+#  datasource:
+#    druid:
+#      url: jdbc:mysql://127.0.0.1:3306/dbname?useUnicode=true&characterEncoding=utf-8&useSSL=false
+#      username: root
+#      password: 123456
+#      initial-size: 1
+#      min-idle: 1
+#      max-active: 20
+#      test-on-borrow: true
+#      driver-class-name: com.mysql.jdbc.Driver
+#  mybaits:
+#    type-aliases-package: com.dengling.demo.entity
+#    mapper-locations: classpath:mapper/*.xml

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <div>
+        <span>访问Model:</span>
+        <span th:text="${user.name}"></span>
+    </div>
+    <div>
+        <span>访问列表</span>
+        <table>
+            <thead>
+                <tr>姓名</tr>
+                <tr>年龄</tr>
+            </thead>
+            <tbody>
+                <tr th:each = "user : ${users}">
+                    <td th:text="${user.name}"></td>
+                    <td th:text="${user.age}"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
